@@ -1,6 +1,7 @@
 html,
 body {
   margin: 0;
+  height: 100%;
 }
 
 .wrapper {
@@ -8,22 +9,28 @@ body {
   padding: 10px;
 }
 
-.wrapper .row {
+.row {
   display: flex;
   justify-content: space-between;
   color: #fff;
+  height: 20vw;
 }
 
-.wrapper > .row:not(:first-child) {
+.row:not(:first-child) {
   margin-top: 14px;
 }
 
-.wrapper > .row > .memory-card {
+.memory-card {
   display: flex;
   justify-content: center;
   align-items: center;
   min-width: 64px;
   min-height: 64px;
+  width: 20vw;
   background-color: #293e4c;
   border-radius: 8px;
+}
+
+.icon--invisible {
+  display: none;
 }
