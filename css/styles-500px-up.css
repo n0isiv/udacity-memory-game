@@ -1,0 +1,30 @@
+/* GLOBAL */
+
+body {
+  font-size: 24px;
+}
+
+/* GAME */
+
+.game {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+/* WRAPPER */
+
+.wrapper__row {
+  height: 105px;
+}
+
+.wrapper__card {
+  width: 105px;
+}
+
+.wrapper__card > i {
+  font-size: 24px;
+}

@@ -1,17 +1,67 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
+    <title>Memory Game</title>
+
     <!-- META -->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta charset="utf-8" />
 
     <!-- STYLES -->
     <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="stylesheet"
+      media="screen and (min-width:500px)"
+      href="css/styles-500px-up.css"
+    />
     <link rel="stylesheet" href="css/fontello.css" />
   </head>
 
   <body lang="en">
-    <div class="wrapper"><!-- ROWS & CARDS WILL BE INJECTED HERE --></div>
+    <div class="game">
+      <!-- STATS -->
+      <div class="stats">
+        <i class="icon-clock"></i> <span class="stats__timer"></span>
+        <span class="stats__rating float-right"> </span>
+        <span class="stats__counter"></span>
+      </div>
+
+      <!-- WRAPPER -->
+      <div class="wrapper"><!-- ROWS & CARDS WILL BE INJECTED HERE --></div>
+
+      <!-- WINNING SCREEN -->
+      <div class="winning-screen">
+        <!-- HEADING -->
+        <h3 class="winning-screen__heading">Congratulations! You won!</h3>
+
+        <!-- STATS -->
+        <div class="winning-screen__stats">
+          <p class="winning-screen__stat">
+            <span>Time</span>
+            <span class="winning-screen__timer font-bold">
+              <!-- TIME WILL BE INJECTED HERE -->
+            </span>
+          </p>
+          <p class="winning-screen__stat">
+            <span>Moves</span>
+            <span class="winning-screen__counter font-bold">
+              <!-- MOVES WILL BE INJECTED HERE -->
+            </span>
+          </p>
+          <p class="winning-screen__stat">
+            <span>Rating</span>
+            <span class="winning-screen__rating star-rating">
+              <!-- RATING WILL BE INJECTED HERE -->
+            </span>
+          </p>
+        </div>
+
+        <!-- RETRY BUTTON -->
+        <button class="winning-screen__retry font-bold" type="button">
+          Play again
+        </button>
+      </div>
+    </div>
 
     <!-- SCRIPTS -->
     <script src="js/helpers.js"></script>
